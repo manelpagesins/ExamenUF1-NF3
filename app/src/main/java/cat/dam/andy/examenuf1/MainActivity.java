@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     static int nTaulaDreta = 0;
 
 
-    static ArrayList<Animal> animals = new ArrayList<Animal>();
+    static ArrayList<Animal> animals = new ArrayList<Animal>(); //Array en static que guarda els objectes tipu Animal
 
     /**
      * Funcio que servira per inserir valors dins del ArrayList
@@ -96,13 +96,13 @@ public class MainActivity extends AppCompatActivity {
 
         int numRand,casella1,casella2,casella3,casella4;
 
-        numRand = rand.nextInt(10);
+        numRand = rand.nextInt(10); //Genarem un numero del 0 al 10 per escullir un animal
 
         //ImageView img_esquerra_r1c1
         casella1 = numRand;
 
-        img_esquerra_r1c1.setImageBitmap(animals.get(casella1).getImatge());
-        punts += animals.get(casella1).getPuntuacio();
+        img_esquerra_r1c1.setImageBitmap(animals.get(casella1).getImatge()); //Aconseguim la imatge del objecte animal
+        punts += animals.get(casella1).getPuntuacio(); //Aconseguim els punts del objecte animal
 
         //ImageView img_esquerra_r1c2
         numRand = rand.nextInt(10);
